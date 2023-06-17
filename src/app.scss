@@ -1,0 +1,24 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+@keyframes titleblureffect {
+	0% {
+		text-shadow: 0 0 0px;
+	}
+	30% {
+		text-shadow: 0 0 2px rgb(255 255 255 / 0.15);
+	}
+	36% {
+		text-shadow: 0 0 0.2px rgb(255 255 255 / 0.15);
+	}
+	42% {
+		text-shadow: 0 0 0.8px rgb(255 255 255 / 0.15);
+	}
+	50% {
+		text-shadow: 0 0 2px rgb(255 255 255 / 0.15);
+	}
+	70% {
+		text-shadow: 0 0 1px rgb(255 255 255 / 0.15);
+	}
+	100% {
+		text-shadow: 0 0 0.2px rgb(255 255 255 / 0.15);
+	}
+}

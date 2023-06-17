@@ -1,0 +1,29 @@
+run = "npm run dev"
+entrypoint = "src/routes/+page.svelte"
+[packager]
+language = "nodejs"
+
+[packager.features]
+packageSearch = true
+guessImports = true
+
+[languages.svelte]
+pattern = "**/*.svelte"
+syntax = "svelte"
+
+[languages.svelte.languageServer]
+command = ["svelteserver", "--stdio"]
+
+[languages.javascript]
+pattern = "**/*.js"
+syntax = "javascript"
+
+[languages.javascript.languageServer]
+start = [ "svelteserver", "--stdio" ]
+
+[nix]
+channel = "stable-22_11"
+
+[env]
+#ORIGIN = "https://$REPL_SLUG.$REPL_OWNER.repl.co"
+ORIGIN = "http://0.0.0.0:5173"

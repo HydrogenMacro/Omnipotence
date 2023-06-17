@@ -1,0 +1,9 @@
+/* Variables and mixins declared here will be available in all other SCSS files */
+@font-face {
+	font-family: Larabie;
+	src: url("$lib/fonts/larabie.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Glegoo&display=swap");
+
+$main-font: Glegoo, sans-serif;
+$title-font: Larabie, monospace;
